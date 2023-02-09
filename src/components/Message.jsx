@@ -1,3 +1,4 @@
+import { Timestamp } from 'firebase/firestore';
 import React, { useContext, useEffect, useRef } from 'react'
 import { AuthContext } from '../context/AuthContext'
 import { ChatContext } from '../context/ChatContext';
@@ -24,7 +25,7 @@ export const Message = ({message}) => {
           : data.user.photoURL
           } 
           alt="" />
-        <span>just now</span>
+        <span>just now</span>  
       </div>
       <div className="messageContent">
         <p>{message.text}</p>

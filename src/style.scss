@@ -16,14 +16,31 @@
     }
 }
 
-// $darkColor: #2f2d52;
+
+
+.formContainer, .home {
+    background: linear-gradient(-45deg, #322586, #57359c, #604fb3, #7d69c7,#9b89d6,#7f69c7, #614fb3,#4f359c,#3a2586 );
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+    }
+}
 
 .formContainer {
-    background-color: #a7bcff;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    
     
     .formWrapper {
         background-color: white;
@@ -57,7 +74,7 @@
                 }
             }
             button {
-                background-color: #7b96ec;
+                background-color: #9d7bec;
                 color: white;
                 padding: 10px;
                 font-weight: bold;
@@ -87,7 +104,7 @@
 }
 
 .home {
-    background-color: #a7bcff;
+    // background-color: #a7bcff;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -107,28 +124,22 @@
 
         .sidebar {
             flex: 1;
-            background-color: #3e3c61;
+            background-color: #ffffff;
             position: relative;
+            border: 0.5px solid #9b9999;
 
             .navbar {
                 display: flex;
                 align-items: center;
-                background-color: #2f2d52;
+                background-color: #d5d5d5;
                 height: 50px;
                 padding: 10px;
-                justify-content: space-between;
-                color:  #ddddf7;
-
-                .logo {
-                    font-weight: bold;
-                    @include tablet {
-                        display: none;
-                    }
-                }
+                gap: 10px;
+                justify-content: flex-start;
+                color:  #000000;
 
                 .user {
-                    display: flex;
-                    gap: 10px;
+                    display: contents;
                 
                     img {
                         background-color: #ddddf7;
@@ -139,15 +150,21 @@
                     }
                 
                     button {
-                        background-color: #5d5b8d;
-                        color:#ddddf7;
+                        background-color: #ffffff;
+                        border-radius: 5px;
+                        color:#000000;
                         font-size: 10px;
-                        border: none;
+                        border: 1px solid gray;
                         cursor: pointer;
-                        @include tablet {
-                            position: absolute;
-                            bottom: 10px;
-                        }
+                        position: absolute;
+                        bottom: 10px;
+                        padding: 10px 15px;
+
+
+                        // @include tablet {
+                        //     position: absolute;
+                        //     bottom: 10px;
+                        // }
                 
                     }
                 }             
@@ -162,11 +179,11 @@
                     input {
                         background-color: transparent;
                         border: none;
-                        color: white;
+                        color: rgb(0, 0, 0);
                         outline: none;
                         
                         &::placeholder{
-                            color: lightgray;
+                            color: rgb(160, 160, 160);
                         }
 
                     }
@@ -179,11 +196,11 @@
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                color: white;
+                color: rgb(0, 0, 0);
                 cursor: pointer;
 
                 &:hover{
-                    background-color: #2f2d52;
+                    background-color: #eeeeee;
                 }
                 img {
                     width: 50px;
@@ -199,7 +216,7 @@
                     }
                     p {
                         font-size: 14px;
-                        color: lightgray;
+                        color: #868686
                     }
                 }
 
@@ -211,10 +228,11 @@
         }
         .chat {
             flex: 2;
+            border: 0.5px solid #9b9999;
 
             .chatInfo {
                 height: 50px;
-                background-color: #5d5b8d;
+                background-color: #d5d5d5;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -233,7 +251,7 @@
             }
 
             .messages {
-                background-color: #ddddf7;
+                background-color: #ffffff;
                 padding: 10px;
                 height: calc(100% - 160px);
                 overflow-y: auto;
@@ -265,7 +283,7 @@
                         gap: 10px;
 
                         p {
-                            background-color: white;
+                            background-color: #eeeeee;
                             padding: 10px 20px;
                             border-radius: 0px 10px 10px 10px;
                             max-width: max-content;
@@ -273,6 +291,8 @@
 
                         img {
                             width: 50%;
+                            border: 1px solid #eeeeee;
+                            border-radius: 0px 10px 10px 10px;
 
                         }
                     }
@@ -294,7 +314,8 @@
             }
 
             .input {
-                background-color: white;
+                background-color: #d5d5d5;
+                gap: 20px;
                 height: 50px;
                 padding: 10px;
                 display: flex;
@@ -307,6 +328,9 @@
                     outline: none;
                     color:#2f2d52;
                     font-size: 18px;
+                    border-radius: 5px;
+                    height: 28px;
+                    padding: 5px;
 
                     &::placeholder {
                         color: gray;
@@ -327,7 +351,7 @@
                         border: none;
                         padding: 10px 15px;
                         color: white;
-                        background-color: #5d5b8d;
+                        background-color: #9d9d9d;
                         border-radius: 5px;
                     }
                 }

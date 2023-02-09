@@ -40,14 +40,8 @@ export const Chats = () => {
              <p>{chat[1].lastMessage?.text}</p>
               </div>
           </div>
-      ))}
-      {/* <div className='userChat'>
-            <img src='https://www.svgrepo.com/show/420360/avatar-batman-comics.svg' alt = ""/>
-            <div className="userChatInfo">
-                <span>Batman</span>
-                <p>Hello</p>
-            </div>
-      </div> */}
+          
+         ))}
     </div>
   )
 }

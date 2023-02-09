@@ -81,7 +81,7 @@ const Input = () => {
         onChange ={(e)=> setText(e.target.value)}
         value={text}/>
       <div className='send'>
-        <img src="https://www.svgrepo.com/show/476439/paperclip.svg" alt="" />
+        {/* <img src="https://www.svgrepo.com/show/476439/paperclip.svg" alt="" /> */}
         <input type="file" style = {{display:'none'}} id='file' onChange={(e)=>setImg(e.target.files[0])}/>
         <label htmlFor='file'>
           <img src="https://www.svgrepo.com/show/476445/photo.svg" alt="" />

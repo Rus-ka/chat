@@ -3,10 +3,10 @@ import Register from "./pages/Register";
 import Home from "./pages/Home";
 import './style.scss'
 import {
-  BrowserRouter,
   Routes,
   Route,
   Navigate,
+  BrowserRouter,
 } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
