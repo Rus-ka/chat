@@ -3,7 +3,7 @@
 # Chat
 
 ## What is that?
-Free, multiplatform messaging app that lets you to send text messages and images. 
+Free, multiplatform messaging app that lets user to send text messages and images. 
 
 ## About this app
 
@@ -55,18 +55,21 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 ## User journey map:
 
 ### Registration
+<img alt="register" src="readme/register.png" />
   - user should provide nickname, email and password
   - as an option, user can add avatar
-  
+
 ### Login
+<img alt="login" src="readme/login.png" />
   - user can login using email and password
 
 ### Starting chat
+<img alt="chat" src="readme/chat.png" />
   To start messaging user should find exact user using searchbar.
   Basically, user can find next users: Avocado, Batman, Charlie, Ners.
 
 ### Logout
-  - user can login using email and password
+  - Anytime, user can logout using logout button
   
 
 ### ToDo:
