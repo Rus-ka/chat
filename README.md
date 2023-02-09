@@ -60,11 +60,11 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
   - as an option, user can add avatar
 
 ### Login
-<img alt="login" width = '60%' src="readme/login.png" />
+<img alt="login" width = '30%' src="readme/login.png" />
   - user can login using email and password
 
 ### Starting chat
-<img alt="chat" width = '60%' src="readme/chat.png" />
+<img alt="chat" width = '30%' src="readme/chat.png" />
   To start messaging user should find exact user using searchbar.
   Basically, user can find next users: Avocado, Batman, Charlie, Ners.
 
