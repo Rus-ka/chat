@@ -4,7 +4,7 @@
 
 ## What is that?
 Free, multiplatform messaging app that lets user to send text messages and images. 
-
+<img alt="demo" src="readme/demo.gif" />
 ## About this app
 
 My app allows user to send and receive messages. 
